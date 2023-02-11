@@ -1,0 +1,14 @@
+.link {
+  color: #3f51b5;
+  margin-left: 15px;
+  font-weight: 500;
+}
+
+.wrapper {
+  padding: 15px;
+  box-shadow: 1px 1px 10px 1px rgb(32, 30, 30);
+}
+
+.link:global(.active) {
+  color: red;
+}
