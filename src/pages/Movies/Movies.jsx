@@ -4,6 +4,8 @@ import { searchFilmApi } from 'shared/services/Film-Api';
 import Loader from 'components/Loader/Loader';
 import SearchBox from 'components/SearchBox/SearchBox';
 
+import styles from './Movies.module.css';
+
 function Movies() {
   const [articles, setArticles] = useState([]);
   const [response, setError] = useState(null);
@@ -38,11 +40,11 @@ function Movies() {
   return (
     <>
       <SearchBox getSearch={getSearch} />
-      <ul>
+      <ul className={styles.wrapper}>
         {loading && <Loader />}
         {!loading &&
           articles.map(({ id, title }) => (
-            <li key={id}>
+            <li className={styles.list} key={id}>
               <Link to={`/movies/${id}`} state={{ from: location }}>
                 {title}
               </Link>
