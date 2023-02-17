@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './SearchBox.module.css';
 
@@ -39,3 +40,7 @@ function SearchBox({ getSearch }) {
 }
 
 export default SearchBox;
+
+SearchBox.propTypes = {
+  getSearch: PropTypes.func.isRequired,
+};

@@ -1,4 +1,4 @@
-function NotFound(params) {
+function NotFound() {
   return <h1>NotFound</h1>;
 }
 
