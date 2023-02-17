@@ -1,0 +1,13 @@
+.wrapper {
+  padding: 20px;
+}
+
+.text {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #3f51b5;
+}
+
+.list {
+  margin-bottom: 5px;
+}

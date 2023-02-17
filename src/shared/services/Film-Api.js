@@ -10,3 +10,12 @@ export const searchFilmApi = search =>
 
 export const searchFilmByID = id =>
   axios.get(`/movie/${id}?api_key=${API_KEY}&language=en-US`);
+
+export const searchFilmTrending = () =>
+  axios.get(`/trending/movie/day?api_key=${API_KEY}`);
+
+export const searchFilmByCast = id =>
+  axios.get(`/movie/${id}/credits?api_key=${API_KEY}&language=en-US`);
+
+export const searchFilmByReviews = id =>
+  axios.get(`/movie/${id}/reviews?api_key=${API_KEY}&language=en-US&page=1`);
