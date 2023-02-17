@@ -1,8 +1,14 @@
-.text {
-  margin-bottom: 10px;
+.list {
+  padding: 15px;
 }
 
 .title {
+  font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.text {
+  margin-bottom: 10px;
+  text-align: justify;
 }

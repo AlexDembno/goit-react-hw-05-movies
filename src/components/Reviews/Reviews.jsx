@@ -36,7 +36,7 @@ function Reviews() {
 
   return (
     <>
-      <ul>
+      <ul className={styles.list}>
         {loading && <Loader />}
         {!loading && reviews.length === 0 ? 'No reviews' : element}
       </ul>

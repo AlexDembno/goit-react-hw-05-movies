@@ -28,7 +28,7 @@ function Cast() {
   }, [id, response]);
 
   const element = cast.map(({ id, name, profile_path, character }) => (
-    <li key={id}>
+    <li className={styles.item} key={id}>
       {profile_path && (
         <img
           className={styles.img}
@@ -37,7 +37,7 @@ function Cast() {
           width="100"
         />
       )}
-      <p>{character}</p>
+      <p className={styles.text}>{character}</p>
     </li>
   ));
 
